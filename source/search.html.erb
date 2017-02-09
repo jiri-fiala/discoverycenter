@@ -1,0 +1,113 @@
+---
+title: Search Results
+layout: "search"
+---
+
+<header>
+  <div class="container">
+    <i class="rh rh-search rh-3x"></i>
+    <h1 style="display:inline-block;">We found these for your <strong>
+      <script>
+        var $_GET = {};
+        document.location.search.replace(/\??(?:([^=]+)=([^&]*)&?)/g, function () {
+          function decode(s) {
+              return decodeURIComponent(s.split("+").join(" "));
+          }
+          $_GET[decode(arguments[1])] = decode(arguments[2]);
+        });
+        document.write($_GET["query"]);
+      </script>
+    </strong> search</h1>
+  </div>
+</header>
+
+<section class="search-results-group">
+  <div class="container">
+    <div class="row text-left">
+      <div class="col-md-6">
+        <h3>OpenShift Online Documentation</h3>
+      </div>
+      <div class="col-md-6 text-right search-source-btn">
+        <a href="https://docs.openshift.com/online/welcome/index.html" target="blank" rel="nofollow" class="btn btn-primary" role="button">Browse the documentation -></a>
+      </div>
+    </div>
+    <div class="row text-left">
+      <div class="col-md-12">
+        <% 5.times do |num| %>
+          <div class="search-result-item">
+            <a href="javascript:void(0)">Documentation result <%= num+1 %></a>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nost...</p>
+          </div>
+        <% end %>
+      </div>
+      <div class="col-md-12 text-center">
+        <a href="javascript:void(0)" class="btn btn-default">Load more results from documentation</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="search-results-group">
+  <div class="container">
+    <div class="row text-left">
+      <hr>
+      <div class="col-md-6">
+        <h3>OpenShift Blog</h3>
+      </div>
+      <div class="col-md-6 text-right search-source-btn">
+        <a href="http://blog.openshift.com/" target="blank" rel="nofollow" class="btn btn-primary" role="button">Browse OpenShift Blog -></a>
+      </div>
+    </div>
+    <div class="row text-left">
+      <div class="col-md-12">
+        <% 5.times do |num| %>
+          <div class="search-result-item">
+            <a href="javascript:void(0)">Blog result <%= num+1 %></a>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nost...</p>
+          </div>
+        <% end %>
+      </div>
+      <div class="col-md-12 text-center">
+        <a href="javascript:void(0)" class="btn btn-default">Load more OpenShift Blog results</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="search-results-group">
+  <div class="container">
+    <div class="row text-left">
+      <hr>
+      <div class="col-md-6">
+        <h3>Stack Overflow</h3>
+      </div>
+      <div class="col-md-6 text-right search-source-btn">
+        <a href="http://stackoverflow.com/questions/tagged/openshift*" target="blank" rel="nofollow" class="btn btn-primary" role="button">Browse Stack Overflow -></a>
+      </div>
+    </div>
+    <div class="row text-left">
+      <div class="col-md-12">
+        <% 5.times do |num| %>
+          <div class="search-result-item">
+            <a href="javascript:void(0)">Stack Overflow result <%= num+1 %></a>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nost...</p>
+          </div>
+        <% end %>
+      </div>
+      <div class="col-md-12 text-center">
+        <a href="javascript:void(0)" class="btn btn-default">Load more results from Stack Overflow</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="contact">
+  <div class="container">
+    <div class="row text-center">
+      <div class="col-md-12">
+        <h3>No luck finding what you're looking for? Want to report an issue?</h3>
+        <a href="https://www.openshift.com/about/contact.html" target="_blank" class="btn btn-default">Contact us</a>
+      </div>
+    </div>
+  </div>
+</section>

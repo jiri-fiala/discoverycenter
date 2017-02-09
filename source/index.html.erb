@@ -1,20 +1,21 @@
---- 
-layout: "home" 
-title: OpenShift Discovery Center 
+---
+layout: "home"
+title: OpenShift Discovery Center
 ---
 
 <header class="masthead masthead-devcenter text-center">
   <div class="container">
     <div class="title-inner">
-      <h1>OpenShift Discovery Center</h1>
+      <h1>OpenShift Online Discovery Center</h1>
       <div class="tag">Your code. Your choice.</div>
+      <h2 style="color: white;">Looking for anything specific?</h1>
       <div style="float:none;" class="col-md-7 col-sm-8 col-xs-8 center-block">
         <div class="search-form">
           <form role="form" method="get" id="cse-search-form-body" class="search has-button" action="/search.html">
             <input type="hidden" value="documentation" name="refinement">
             <div class="form-group">
               <div class="search-pf-input-group">
-                <input type="search" style="outline: none;" spellcheck="false" placeholder=" Search the Discovery Center" name="query" id="cse-search-input-body" dir="ltr" class="form-control" autofocus="" autocomplete="off">
+                <input type="search" style="outline: none;" spellcheck="false" placeholder=" Start here" name="query" id="cse-search-input-body" dir="ltr" class="form-control" autofocus="" autocomplete="off">
               </div>
             </div>
             <div class="form-group">
@@ -29,47 +30,70 @@ title: OpenShift Discovery Center
   </div>
 </header>
 
-<div id='content'>
+<section id="directions">
   <div class="container">
-    <div class='layout'>
       <div class="row text-center">
-        <div class="col-md-3 col-sm-3 get-started-bloc">
-          <a href="/developer/index.html">
+        <h1 class="subtitle">Browse the documentation</h1>
+        <p>If you're not looking for anything specific, you may want to start browsing the OpenShift Online documentaion at one of these spots:</p>
+        <div class="col-md-3 col-sm-3 dir-block">
+          <a href="https://docs.openshift.com/online/getting_started/index.html">
             <div class="section-mark">
-              <i class="rh rh-code rh-10x hidden-sm hidden-xs"></i>
+              <i class="rh rh-moving rh-10x"></i>
             </div>
-            <h2>Developer</h2>
+            <h2>Getting started</h2>
           </a>
-          <span>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer efficitur tellus sapien. Quisque hendrerit purus ut enim hendrerit, ac semper elit cursus. Maecenas cursus interdum commodo.</span>
+          <span>Follow these tutorilas, deploy sample applications and quickly learn all the&nbsp;essentials</span>
         </div>
-        <div class="col-md-3 col-sm-3 documentation-bloc">
-          <a href="/application-architect/index.html">
+        <div class="col-md-3 col-sm-3 dir-block">
+          <a href="https://docs.openshift.com/online/architecture/index.html">
             <div class="section-mark">
-              <i class="rh rh-user-4 rh-10x hidden-sm hidden-xs"></i>
+              <i class="rh rh-network-community rh-10x"></i>
             </div>
-            <h2>Application Architect</h2>
+            <h2>Architecture</h2>
           </a>
-          <span>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer efficitur tellus sapien. Quisque hendrerit purus ut enim hendrerit, ac semper elit cursus. Maecenas cursus interdum commodo.</span>
+          <span>Have a look on OpenShift architecture and get familar with its&nbsp;components</span>
         </div>
-        <div class="col-md-3 col-sm-3 help-bloc">
-          <a href="/cluster-administrator/index.html">
+        <div class="col-md-3 col-sm-3 dir-block">
+          <a href="https://docs.openshift.com/online/cli_reference/index.html">
             <div class="section-mark">
-              <i class="rh rh-server-stack rh-10x hidden-sm hidden-xs"></i>
+              <i class="rh rh-tools rh-10x"></i>
             </div>
-            <h2>Cluster Administrator</h2>
+            <h2>CLI Reference</h2>
           </a>
-          <span>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer efficitur tellus sapien. Quisque hendrerit purus ut enim hendrerit, ac semper elit cursus. Maecenas cursus interdum commodo.</span>
+          <span>Meet the 'oc' command line interface and learn how to use it to manage your&nbsp;OpenShift projects</span>
         </div>
-        <div class="col-md-3 col-sm-3 documentation-bloc">
-          <a href="/systems-platform-administrator/index.html">
+        <div class="col-md-3 col-sm-3 dir-block">
+          <a href="https://docs.openshift.com/online/dev_guide/index.html">
             <div class="section-mark">
-              <i class="rh rh-gears rh-10x hidden-sm hidden-xs"></i>
+              <i class="rh rh-code rh-10x"></i>
             </div>
-            <h2>Systems/Platform Administrator</h2>
+            <h2>Developer Guide</h2>
           </a>
-          <span>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer efficitur tellus sapien. Quisque hendrerit purus ut enim hendrerit, ac semper elit cursus. Maecenas cursus interdum commodo.</span>
+          <span>Browse more detailed information about developing and deploying your applications on&nbsp;OpenShift</span>
         </div>
       </div>
     </div>
-  </div>
-</div>
+</section>
+
+<section id="books">
+    <div class="container">
+      <div class="row text-center">
+        <h1 class="subtitle">Perhaps you'd like to read a book?</h1>
+        <div class="col-md-4">
+            <img src="/img/books/for-developers.png" alt="OpenShift for Developers by Grant Shipley and Graham Dumpleton">
+        </div>
+        <div class="col-md-8 text-left">
+            <div class="caption">
+                <h3>OpenShift for Developers</h3>
+                <p class="small">June 2016<br>by Grant Shipley and Graham Dumpleton</p>
+                <p>OpenShift Next Gen (v3) enables you to use Docker application containers and the Kubernetes cluster manager to automate the way you create, ship, and run applications.
+                  Through the course of the book, you’ll learn how to use OpenShift and the Wildfly application server to build and then immediately deploy a Java application online.</p>
+                <p>
+                  <a href="https://www.openshift.com/promotions/for-developers.html" class="btn btn-primary" role="button" target="_blank">Free Download - eBook</a>
+                  <a href="https://www.amazon.com/OpenShift-Developers-Guide-Impatient-Beginners/dp/1491961430" class="btn btn-default" role="button" target="_blank" rel="nofollow">Paperback</a>
+                </p>
+            </div>
+        </div>
+      </div>
+    </div>
+</section>
